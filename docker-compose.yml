@@ -25,7 +25,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes:
-      - ./search-result1:/usr/share/udemy/test-output
+      - ./output/search-result1:/usr/share/udemy/test-output
   search-module2:
     image: debanga007/selenium-dockerdm
     depends_on:
@@ -36,7 +36,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes:
-      - ./search-result2:/usr/share/udemy/test-output
+      - ./output/search-result2:/usr/share/udemy/test-output
   book-flight-module1:
     image: debanga007/selenium-dockerdm
     depends_on:
@@ -47,7 +47,7 @@ services:
       - HUB_HOST=hub
       - MODULE=book-flight-module.xml
     volumes:
-      - ./book-flight-result1:/usr/share/udemy/test-output
+      - ./output/book-flight-result1:/usr/share/udemy/test-output
   book-flight-module2:
     image: debanga007/selenium-dockerdm
     depends_on:
@@ -58,4 +58,4 @@ services:
       - HUB_HOST=hub
       - MODULE=book-flight-module.xml
     volumes:
-      - ./book-flight-result2:/usr/share/udemy/test-output      
+      - ./output/book-flight-result2:/usr/share/udemy/test-output      
